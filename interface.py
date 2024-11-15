@@ -124,3 +124,4 @@ def build_interface():
         message.submit(fn=craftor.respond, inputs=[message, chatbot, session_id], outputs=[chatbot, message, output_df])
         clearButton.click(fn=craftor.clear_memory, inputs=session_id, outputs=chatbot)
         seeButton.click(fn= craftor.import_from_chat, inputs=session_id, outputs=output_df)
+        return demo
